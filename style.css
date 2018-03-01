@@ -20,15 +20,20 @@ body {
     margin-left: 25px;
     margin-right: 25px;
 }
+/* Hyperlink */
+}
+a:hover {
+    color: red;
+}
     /* Header */
 .name-logo {
     display: inline-block;
     border-color: black;
     border-style: solid;
     border-width: 0.2em;
-    padding: 1em;
+    padding: 0.8em;
     margin: 1em;
-    margin-left: 2em;
+    margin-left: 4em;
     font-weight: bold;
     font-size: 1.3em;
 }
@@ -39,34 +44,34 @@ ul {
     display: inline;
     position: absolute;
     top: 1em;
-    right: 0em;
+    right: 6em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-
 li {
     display: inline;
     padding: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
-
-}
+/* All Bold h1 */
 h1.bold {
     font-weight: bold;
     font-size: 5em;
     margin-bottom: 0em;
 }
-.tomato {
-    color: tomato;
+/* All h2 with subheader class */
+h2.subheader{
+    font-size: 2em;
 }
-.bold {
-    color: tomato;
-}
+
 h2.bold, h1.bold.contact{
     color: black;
 }
-a:hover .about,.experience,.work,.contact {
+a:hover .about, .experience, .work, .contact {
     border-bottom: red 3px;
 }
+
 /* Headshot and Title */
 
 .cover {
@@ -76,38 +81,82 @@ a:hover .about,.experience,.work,.contact {
     margin: 4em 5em 5em 4em;
     padding-left: 3em;
 }
-
+/* Location */
 div.career-location {
     position: absolute;
-    bottom: 1em;
-    right: 1em;
+    bottom: -3em;
+    right: 2em;
 }
-
+/* Main Title */
 div.cover h1.bold {
     font-size: 6em;
     margin-bottom: 0em;
 }
+/* Headshot */
 div.cover .headshot {
     position: static;
     width: 20em;
     height: 27em;
+    margin-left: 3em;
 }
 /* About Me */
-.personal-info {
-    margin: 0em 0em 0em 0em;
-    padding: 2em;
-    border: solid black 0.2em;
+
+/* Summary */
+#about {
+        position: relative;
+        margin: 2em;
+        padding: 0em;
+        text-align: center;
+        height: 30em;
+        width: 79em;
+        background-color: ghostwhite;
 }
-div.#about {
-    height: 35em;
-    width: auto;
-    background-color: gray;
+.personal-info {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    height: 18em;
+    width: 33em;
+    top: 3em;
+    left: 14em;
+    padding: 2.5em;
+    border: solid black 0.2em;
+    background-color: white;
+}
+
+.left-about {
+    text-align: right;
+    display: inline;
+    position: absolute;
+    top: 4em;
+    left: 4em;
+}
+.left-about h2 {
+    font-size: 1.5em;
+    margin: 0em;
+    line-height: 1.5em;
+    color: darkgray;
+}
+/* Hello Title */
+h1.bold.hello {
+    font-size: 5em;
+    font-weight: bold;
+    margin: 0em;
+}
+.bold.name.subheader {
+    font-weight: bold;
+}
+/*Name Logo and Main Title Color*/
+.name-logo, h1.bold.career{
+    color: tomato;
 }
 /* Experience */
 /* Work */
 #work {
     display: block;
-    margin: 1em;
+    margin: 0em;
+    height: 40em;
+    width: 80em;
 }
 .work-links img {
     display: inline-block;
@@ -118,34 +167,52 @@ div.#about {
 
 /* Form Info */
 #contact {
-    margin: 2em;
-    padding: 1em;
+    margin: 1em;
+    padding: 0em;
     height: 30em;
 }
-
-h1.contact {
-    clear: left;
+.contact-header {
     margin: 2em;
+}
+h1.contact {
+    clear: both;
+    margin: 0em;
+    font-size: 5em;
+    display: inline;
 } 
-
+h3.contact {
+    display: inline-block;
+    margin: 2em;
+    clear: both;
+    float: right;
+}
 .button {
     font-family: PlayfairDisplay700;
     font-weight: bold;
     background: tomato;
     color: white;
-    width: 10em;
+    width: 11em;
     height: 5em;
     border-radius: 8px;
     border-style: hidden;
     text-align: center;
     padding: 1em;
     margin: 1em;
-    display: inline;
+    display: block;
     position: relative;
 }
-.form {
+.name, .email, .message{
+    font-family: PlayfairDisplay700;
+}
+.message {
+    height: 10em;
+}
+form {
     display: block;
-    text-align: center;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-bottom: 2em;
+    text-align: -webkit-center;
 }
 input {
     display: block;
@@ -158,6 +225,7 @@ input {
 
 /* Footer */
 footer {
+    display: block;
     padding-top: 2em;
     padding-bottom: 2em;
     margin: 2em 2em 2em 2em;
@@ -173,4 +241,9 @@ footer img {
 footer p{
     display: inline-block;
     margin: 1em 1em 1em 1em;
+    position: relative;
+    bottom: .5em;
+    font-style: italic;
+    font-size: 1.5em;
+    color: darkgray;
 }
