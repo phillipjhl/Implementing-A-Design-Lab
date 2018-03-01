@@ -13,77 +13,92 @@
     <div>
         <header class="header">
             
-            <p>Phillip Langland</p>
+            <p class="name-logo tomato">Phillip Langland</p>
             <!-- Nav Bar to local divs -->
             <nav>
                 <ul>
-                    <li class="about">About</li>
-                    <li class="experience">Experience</li>
-                    <li class="work">Work</li>
-                    <li class="contact">Contact</li>
+                    <li class="about">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="experience">
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li class="work">
+                        <a href="#work">Work</a>
+                    </li>
+                    <li class="contact">
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
        
         </header>
     </div>
    
-    <div>
-
-        <h1 class="career bold">Junior Developer</h1>
-        <h3 class="location bold">Currently in Birmingham, Al</h3>
-        <img src="" alt="Phillip's Headshot">
-
+    <div class="cover">
+        <div class="career-location">
+            <h1 class="bold">Junior Developer</h1>
+            <h2 class="bold">Currently in Birmingham, Al</h2>
+        </div>
+        <img src="IMG_1750.JPG" alt="Phillip's Headshot" class="headshot">
     </div>
    
     <!-- About section starts here -->
-    <div class="#about">
+    <div id="about">
 
-        <h1 class="bold">Hello</h1>
-        <h3 class="bold">Phillip Langland</h3>
-        <h3>Homewood High School Class of 2013</br>Auburn University 3 years</h3>
-        <p>Personal info</p>
+        <div>
+            <h1 class="bold">Hello</h1>
+            <h2 class="bold">Phillip Langland</h2>
+            <h2 class="schooling">Homewood High School Class of 2013</br>Auburn University 3 years<br>Covalence</h2>
+        </div>
+        <p class="personal-info">Personal info</p>
 
     </div>
 
     <!-- Experience section starts here -->
-    <div class="#experience">
+    <div id="experience">
 
         <div class="job">
-            <h3 class="bold">Employer</h3>
+            <h2 class="bold">Employer</h2>
             <p>Job descriptioon</p>
         </div>
 
     </div>
 
     <!-- Work section starts here -->
-    <div class="#work">
-        <div>work 1</div>
-        <div>work 2</div>
-        <div>...</div>
-        <div>...</div>
-        <div>...</div>
-        <div>...</div>
+    <div id="work">
+        <div class="work-links">
+            <a href="https://github.com/phillipjhl" target="_blank" rel="noopener noreferer">
+                <img src="C:\Users\Phillip\Source\Implementing-A-Design-Lab\GitHub_Logo.png" alt="GitHub">
+            </a>
+        </div>
+        <div class="work-links">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferer"></a>
+                <img src="C:\Users\Phillip\Source\Implementing-A-Design-Lab\58480eb3cef1014c0b5e492a.png" alt="MDN">
+            </a>
+        </div>
+        <div class="work-links">
+            <img src="" alt="Car and Driver">
+        </div>
     </div>
 
     <!-- Contact section starts here -->
-    <div class="#contact">
+    <div id="contact">
 
-        <h1 class="bold">Let's Talk</h1>
-        <p>Let's work together</br>philliplangland@gmail.com</p>
+        <div class="contact-header">
+            <h1 class="bold contact">Let's Talk</h1>
+            <h3 class="contact">Let's work together</br>philliplangland@gmail.com</h3>
+        </div>
         
         <!-- Form starts here -->
-        <form action="">
-            <label for="name-input">Name
-                <input id="name-input" type="text" name="name">
-            </label>
-            <label for="email-input">Email
-                <input type="email" name="email">
-            </label>
-            <label for="message-input">Message
-                <input type="text" name="Message">
-            </label>
-            <input type="button" value="Send">
-        </form>
+        <div class="form">
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Message">
+                <input type="button" value="Send" class="button">
+            </form>
+        </div>
 
     </div>
 
@@ -91,9 +106,11 @@
     <div>
 
         <footer>
-            <img src="" alt="">
-            <p class="footer">Thanks for visiting!</p>
-            <img src="" alt="">
+            <div class="footer-tag">
+                <img src="images/icons/dribble.svg" alt="">
+                <p class="footer">Thanks for visiting!</p>
+                <img src="images/icons/instagram.svg" alt="">
+            </div>
         </footer>
 
     </div>

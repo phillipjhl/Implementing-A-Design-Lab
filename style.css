@@ -3,16 +3,176 @@
     src: url(fonts/PlayfairDisplay-Bold.otf);
     font-weight: bold;
 }
+
 @font-face {
     font-family: PlayfairDisplay-Bold;
     src: url(fonts/PlayfairDisplay-Bold.woff);
     font-weight: bold;
 }
+
 @font-face{
     font-family: PlayfairDisplay700;
     src: url(fonts/PlayfairDisplay700.ttf);
 }
+/* Body */
+body {
+    font-family: PlayfairDisplay700;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+    /* Header */
+.name-logo {
+    display: inline-block;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.2em;
+    padding: 1em;
+    margin: 1em;
+    margin-left: 2em;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+header.header {
+    position: relative;
+}
+ul {
+    display: inline;
+    position: absolute;
+    top: 1em;
+    right: 0em;
+}
+
+li {
+    display: inline;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+}
 h1.bold {
+    font-weight: bold;
+    font-size: 5em;
+    margin-bottom: 0em;
+}
+.tomato {
+    color: tomato;
+}
+.bold {
+    color: tomato;
+}
+h2.bold, h1.bold.contact{
+    color: black;
+}
+a:hover .about,.experience,.work,.contact {
+    border-bottom: red 3px;
+}
+/* Headshot and Title */
+
+.cover {
+    position: relative;
+    height: 30em;
+    width: auto;
+    margin: 4em 5em 5em 4em;
+    padding-left: 3em;
+}
+
+div.career-location {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
+
+div.cover h1.bold {
+    font-size: 6em;
+    margin-bottom: 0em;
+}
+div.cover .headshot {
+    position: static;
+    width: 20em;
+    height: 27em;
+}
+/* About Me */
+.personal-info {
+    margin: 0em 0em 0em 0em;
+    padding: 2em;
+    border: solid black 0.2em;
+}
+div.#about {
+    height: 35em;
+    width: auto;
+    background-color: gray;
+}
+/* Experience */
+/* Work */
+#work {
+    display: block;
+    margin: 1em;
+}
+.work-links img {
+    display: inline-block;
+    width: 27em;
+    height: 19em;
+    float: left
+}
+
+/* Form Info */
+#contact {
+    margin: 2em;
+    padding: 1em;
+    height: 30em;
+}
+
+h1.contact {
+    clear: left;
+    margin: 2em;
+} 
+
+.button {
     font-family: PlayfairDisplay700;
     font-weight: bold;
+    background: tomato;
+    color: white;
+    width: 10em;
+    height: 5em;
+    border-radius: 8px;
+    border-style: hidden;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    display: inline;
+    position: relative;
+}
+.form {
+    display: block;
+    text-align: center;
+}
+input {
+    display: block;
+    height: 2.5em;
+    width: 50em;
+    margin: 2em;
+    background: ghostwhite;
+    padding-left: 1em;
+}
+
+
+
+/* Footer */
+footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 2em 2em 2em 2em;
+    border-top: solid black .2em;
+    text-align: center;
+    clear: both;
+}
+footer img {
+    display: inline-block;
+    height: 2.5em;
+    width: 2.5em;
+}
+footer p{
+    display: inline-block;
+    margin: 1em 1em 1em 1em;
 }
