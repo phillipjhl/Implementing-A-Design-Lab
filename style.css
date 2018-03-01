@@ -22,6 +22,7 @@ body {
 }
 /* Hyperlink */
 }
+
 a:hover {
     color: red;
 }
@@ -151,17 +152,17 @@ h1.bold.hello {
     color: tomato;
 }
 /* Experience */
+
 /* Work */
 #work {
     display: block;
     margin: 0em;
-    height: 40em;
+    height: 20em;
     width: 80em;
 }
 .work-links img {
-    display: inline-block;
-    width: 27em;
-    height: 19em;
+    width: 26em;
+    height: 20em;
     float: left
 }
 
@@ -181,7 +182,6 @@ h1.contact {
     display: inline;
 } 
 h3.contact {
-    display: inline-block;
     margin: 2em;
     clear: both;
     float: right;
@@ -200,6 +200,7 @@ h3.contact {
     margin: 1em;
     display: block;
     position: relative;
+    left: 20em;
 }
 .name, .email, .message{
     font-family: PlayfairDisplay700;
