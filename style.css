@@ -1,0 +1,20 @@
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url(fonts/PlayfairDisplay-Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url(fonts/PlayfairDisplay_Bold.woff);
+    font: bold;
+}
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(fonts/PlayfairDisplay700.ttf);
+}
+h1 {
+    font-family: PlayfairDisplay;
+}
+nav {
+    font-family: PlayfairDisplay;
+}
